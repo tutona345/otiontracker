@@ -70,7 +70,7 @@ def handle_message(update: Update, context: CallbackContext) -> None:
         update.message.reply_photo(photo='https://i.ibb.co/kcFYc6x/chart-sample.jpg', caption="График EUR/USD")
     elif 'обучение' in text:
         for title, content in education_blocks:
-            update.message.reply_text(f"{title}:
+            update.message.reply_text(f"{title}:)
 {content}")
     elif 'баланс' in text:
         bal = users_data[user_id]['balance']
